@@ -1,0 +1,323 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+}
+.toparea
+{
+    display: flex;
+    justify-content: space-between;
+}
+.toparea .logo a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1rem;
+}
+.toparea .logo
+{
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.toparea .logo h1
+{
+    text-shadow: 2px 2px 5px yellow;
+}
+.searchbox
+{
+    position: fixed;
+    right: 90px;
+    top: 50px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    box-shadow: 2px 2px 30px rgb(0,0,0,0.2);
+    box-sizing: border-box;
+    z-index: 1;
+    padding: 5px;
+    border: 1px solid rgba(167, 158, 245, 0.1);
+}
+.searchbox input
+{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-size:1rem ;
+    padding: 5px 0px;
+}
+.searchbox input::placeholder
+{
+    font-size: 0.8rem;
+    font-family: poppins;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #1d1d1d;
+}
+.details
+{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.details img
+{
+    height: 300px;
+    width: 600px;
+    box-shadow: 2px 2px 9px rgb(0, 128, 109), -2px -2px 9px rgb(66, 9, 225);
+}
+.title
+{
+    position: absolute;
+    top: 43%;
+    right: 5%;
+}
+.title h1,h2
+{
+    color: #3d3d4a;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+}
+.title h1
+{
+    letter-spacing: 1.7rem;
+}
+.title span
+{
+    color: blue;
+}
+.title button
+{
+    border: 2px solid yellow;
+    outline: none;
+    padding: 0.5rem;
+    margin-top: 0.6rem;
+    background-color: black;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.icon li
+{
+    list-style: none;
+    padding: 8px;
+}
+.icon
+{
+    position: fixed;
+    top: 35%;
+    left: 2rem;
+    border: 1px solid yellow;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 20px rgb(81, 76, 76);
+    border-radius: 20px;
+}
+.icon li a
+{
+    color: blue;
+}
+.icon li a i:hover
+{
+    color: black;
+}
+.productsection
+{
+    width: 85%;
+    box-shadow: 5px 5px 9px green , -5px -5px 9px yellow;
+    padding: 30px 40px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -60px;
+    border-radius: 10px;
+    position: relative;
+    background-size: 1000px;
+}
+.productsection .name
+{
+    font-size: 40px;
+    color: black;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    word-spacing: 0.5rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px black;
+}
+.name span
+{
+    color: blue;
+}
+.product
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 34px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.box
+{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    position: relative;
+    margin: 20px 30px;
+    /* box-shadow: 2px 2px 9px rgb(193, 193, 11) ,-2px -2px 9px rgb(8, 114, 8); */
+}
+.box:hover
+{
+    box-shadow: 2px 2px 9px rgb(193, 193, 11) ,-2px -2px 9px rgb(8, 114, 8);
+}
+.box img
+{
+    height: 330px;
+    width: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.box h4
+{
+    font-size: auto;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+.box a
+{
+    text-decoration: none;
+    margin-bottom: 0.9rem;
+
+}
+.box .addbtn
+{
+    padding: 0.4rem;
+    background-color: #3F3D56;
+    color: #fff;
+    border-radius: 15% 15% 15% 15% / 50% 50% 50% 50%;
+    position: absolute;
+    bottom: -30px;
+    display: none;
+    animation: fade 0.2s;
+}
+.box:hover .addbtn
+{
+    display: block;
+}
+.about
+{
+    display: flex;
+    width: 85%;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem auto;
+}
+.about .content
+{
+    width: 500px;
+    height: 500px;
+}
+.content h1
+{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+.content h3
+{
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.content p
+{
+    font-size: 1.5rem;
+}
+.about img
+{
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 4rem;
+}
+.notification h1
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 2rem;
+    color: #1d1d1d;
+    letter-spacing: 2px;
+}
+.notification span
+{
+    color: blue;
+}
+.notification-input 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.notification-input input
+{
+    width: 400px;
+    height: 30px;
+    outline: none;
+    border: none;
+    padding: 1.2rem 3rem;
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 2px 2px 9px black;
+}
+button
+{
+    position: relative;
+    left:160px ;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: black;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #fff;
+}
+.notification button:hover
+{
+    background-color: blue;
+    transition: all ease 0.5s;
+}
+footer
+{
+    width: 100%;
+    height: 3rem;
+    background-color: black;
+    color: #fff;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
